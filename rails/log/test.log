@@ -1,0 +1,57 @@
+
+
+Processing ExampleController#index (for 0.0.0.0 at 2008-04-12 16:32:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"example"}
+
+
+Processing ExampleController#index (for 0.0.0.0 at 2008-04-12 16:32:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"example"}
+
+
+Processing ExampleController#index (for 0.0.0.0 at 2008-04-12 16:32:57) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"example"}
+Rendering template within layouts/application
+Rendering example/index
+
+
+Processing ExampleController#index (for 0.0.0.0 at 2008-04-12 16:33:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"example"}
+Rendering template within layouts/application
+Rendering example/index
+Completed in 0.00489 (204 reqs/sec) | Rendering: 0.00173 (35%) | DB: 0.00000 (0%) | 200 OK [http://test.host/example]
+
+
+Processing ExampleController#index (for 0.0.0.0 at 2008-04-12 16:34:15) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"example"}
+Rendering template within layouts/application
+Rendering example/index
+Completed in 0.00480 (208 reqs/sec) | Rendering: 0.00167 (34%) | DB: 0.00000 (0%) | 200 OK [http://test.host/example]
+
+
+Processing ExampleController#index (for 0.0.0.0 at 2008-04-12 16:34:47) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"example"}
+Rendering template within layouts/application
+Rendering example/index
+Completed in 0.00494 (202 reqs/sec) | Rendering: 0.00179 (36%) | DB: 0.00000 (0%) | 200 OK [http://test.host/example]
+
+
+Processing ExampleController#index (for 0.0.0.0 at 2008-04-12 16:34:59) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"example"}
+Rendering template within layouts/application
+Rendering example/index
+Completed in 0.01216 (82 reqs/sec) | Rendering: 0.00897 (73%) | DB: 0.00000 (0%) | 200 OK [http://test.host/example]
+
+
+Processing ExampleController#index (for 0.0.0.0 at 2008-04-12 16:35:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"example"}
+Rendering template within layouts/application
+Rendering example/index
+Completed in 0.00482 (207 reqs/sec) | Rendering: 0.00167 (34%) | DB: 0.00000 (0%) | 200 OK [http://test.host/example]

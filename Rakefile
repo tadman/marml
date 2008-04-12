@@ -7,14 +7,14 @@ import "tasks/marml_tasks.rake"
 desc 'Default: run unit tests.'
 task :default => [ 'marml:build:parser', :test ]
 
-desc 'Test the marml plugin.'
+desc 'Test the Marml plugin.'
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.pattern = 'test/**/*_test.rb'
   t.verbose = true
 end
 
-desc 'Generate documentation for the marml plugin.'
+desc 'Generate documentation for the Marml plugin.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title    = 'Marml'
