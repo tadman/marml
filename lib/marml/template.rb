@@ -1,13 +1,15 @@
 module Marml
   class Template
+    LINE_OFFSET = 1
+    
     include ActionView::TemplateHandlers::Compilable
 
     def self.line_offset
-      1
+      LINE_OFFSET
     end
 
     def line_offset
-      self.class.line_offset
+      LINE_OFFSET
     end
 
     def initialize(for_view)
@@ -18,9 +20,9 @@ module Marml
       true
     end
 
-    def compile(template)
+    def compile(template_src)
       Proc.new {
-        template
+        template_src
       }
     end
   end
