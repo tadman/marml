@@ -4,7 +4,11 @@
  a.k.a. "Marml Ain't a Real Markup Language"
 =============================================================================
 
-Flexible, inventive alternative to ERB and other Ruby-driven templating systems.
+Flexible, inventive alternative to ERB and other Ruby-driven templating
+systems.
+
+ * Clearly a work in progress. The master branch will contain a working
+   prototype as soon as is practical.
 
 --
 
