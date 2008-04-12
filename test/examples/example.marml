@@ -1,0 +1,247 @@
+! http://marml.org/generators/ruby1.8/xhtml1.1
+
+; Single-Line Comment
+
+; Comment
+	Continued
+	Etc.
+
+;
+	Multi-Line
+	Comment
+
+\; Literal Character
+	
+!-- Single-Line HTML Comment
+
+!-- HTML Comment
+	Continued
+	Etc.
+
+!--
+	Multi-Line
+	HTML Comment
+
+%tag
+	tag_content
+
+.div_class
+	div_class_content
+
+#div_id
+	div_id_content
+	
+%tag= :tag_ruby_content
+
+.div_class= :div_class_ruby_content
+
+#div_id= :div_id_ruby_content
+
+'
+	%multi_line
+	.literal
+
+='
+	%multi_line
+	.literal
+	'insertion'
+
+"
+	multi_line
+	#{@quoted}
+	
+="
+	multi_line
+	#{@quoted}
+	"insertion"
+
+@instance_variable=
+ 	#multi_line
+	.assignment
+	
+-@instance_variable=
+	"ruby " +
+	"multi_line " +
+	"assignment"
+
+%tag{ :style => { :display => :none } }
+	tag_with_style_content
+
+%tag{ :class => [ :foo, :bar ] } }
+	tag_with_class_content
+
+%tag{ :id => [ :foo, :bar ] } }
+	tag_with_id_content
+
+%tag{ :onclick => [ 'foo', 'bar' ] }
+	tag_with_js_content
+	
+%tag_with_multiline_hash
+	{
+		:attr1 => 'attr1'
+		:attr2 => 'attr2'
+		:attr3 => 'attr3'
+	tag_with_multiline_merged_hash_content
+
+%tag_with_multiline_merged_hash
+	{ @tag_options
+		:attr1 => 'attr1'
+		:attr2 => 'attr2'
+		:attr3 => 'attr3'
+	tag_with_multiline_merged_hash_content
+	
+%tag_with_cdata
+	<!cdata
+		tag_with_cdata_content
+	
+%tag:with_colon
+	tag_with_colon_content
+
+%tag-with-dash
+	tag_with_dash_content
+
+- :ruby_code
+-:ruby_code_unspaced
+
+= :ruby_code_inlined
+=:ruby_code_inlined_unspaced
+
+| "<html_safe ruby_code>"
+|"<html_safe ruby_code unspaced>"
+
+custom_filter| "custom_filtered ruby_code"
+custom_filter|"custom_filtered ruby_code unspaced"
+
+filter1|filter2| "chain_filtered ruby_code"
+filter1|filter2|"chain_filtered ruby_code unspaced"
+
+-
+	[
+		:multi_line,
+		:ruby_code
+	]
+	
+=
+	"multi-line" +
+	"ruby code"
+	
+|
+	"<multi_line " +
+	"html_safe_ruby_code>"
+	
+custom_filter|
+	"multi_line" +
+	"custom_filtered" +
+	"ruby_code"
+
+#@object
+	test_object_id_content
+
+#@object:type
+	test_object_id_type_content
+
+.@object
+	test_object_class_content
+
+.@object:type
+	test_object_class_type_content
+
+%tag#@object
+	tag_with_dom_id_content
+	
+%tag#@object:type
+	tag_with_dom_id_typed_content
+
+%tag.@object
+	tag_with_dom_class_content
+
+%tag.@object:type
+	tag_with_dom_class_typed_content
+
+*simple_partial
+	yield_content
+	
+*compound_partial
+	:part1
+		part1_content
+	:part2
+		part2_content
+	:
+		default_content
+
+*partial/with_path
+	partial_with_path_content
+
+*partial_with_option(:option1)
+	partial_with_option_content
+
+*partial_with_option_list(:option1, :option2, :option3)
+	partial_with_option_list_content
+
+*partial_with_option_hash(:option1 => :option1_value, :option2 => :option2_value)
+	partial_with_option_hash_content
+
+@single_object+single_object_partial |item|
+	single_object_content
+
+@single_object+single_object_partial_with_block |item|
+	single_object_partial_with_block_content
+	= item.content
+
+@array*array_partial |item|
+	array_content
+
+@array*array_partial_with_block |item|
+	array_partial_with_block_content
+	= item.content
+
+@auto*auto_partial
+	&:nil?
+		auto_partial_nil_content
+	&:empty?
+		auto_partial_empty_content
+	&:is_a?(Hash)
+		auto_partial_is_a_hash_content
+	:
+		auto_partial_default_content
+		
+@single_object
+	single_object_content
+	= content
+
+@single_object
+	&:nil?
+		single_object_is_nil_content
+	&:empty?
+		single_object_is_empty_content
+	:
+		single_object_default_content
+
+@array*
+	&:nil?
+		array_each_is_nil_content
+	&:empty?
+		array_each_is_empty_content
+	:
+		array_each_default_content
+
+@array* |item|
+	array_with_block
+	= item.content
+
+&simple_method_call
+	simple_method_content
+
+&method_call_with_param(:param1)
+	method_call_with_param_content
+
+&method_call_with_param_list(:param1, :param2, :param3)
+	method_call_with_param_list_content
+
+&method_call_with_param_hash
+	:param1
+		param1_value
+	:param2
+		param2_value
+	:param3
+		param3_value

@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'irb'
+
+$: << File.dirname(__FILE__) + '/../lib/'
+
+require 'marml'
+
+IRB.start
