@@ -1,0 +1,11 @@
+=============================================================================
+ Marml - XHTML Rendering Made Better
+ ---------------------------------------------------------------------------
+ a.k.a. "Marml Ain't a Real Markup Language"
+=============================================================================
+
+Flexible, inventive alternative to ERB and other Ruby-driven templating systems.
+
+--
+
+Copyright (c) 2008 Zome Labs, released under the MIT license.
