@@ -6,3 +6,6 @@ development: &development
 test:
   <<: *development
   database: db/test.sqlite3
+
+production:
+  <<: *development
